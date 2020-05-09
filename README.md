@@ -1,5 +1,30 @@
 # Coffee Shop Full Stack
 
+## How to run
+
+* Installation - backend
+    * virtualenv env
+    * source env/bin/activate
+* Installation - frontend
+    * install node and npm
+    * install ionic cli
+* Run - backend
+    * export FLASK_APP=api.py;
+    * flask run --reload
+* Run - frontend
+    * ionic serve
+* Auth0
+    * Create account, create domain, create web application
+    * Create API, create API permissions, create new roles, enable RBAC
+    * Go to Auth0 Authorize Link to register 2 users and come back to Auth0
+    * Assign roles to the two new users
+    * Go to Auth0 Authorize Link to get the tokens (modify token expiration time if needed)
+* Postman
+    * Import the json collection backend/udacity-fsnd-udaspicelatte.postman_collection.json
+    * Add JWT in the token filed for both barista and manager
+    * Run collection, export collection
+
+
 ## Full Stack Nano - IAM Final Project
 
 Udacity has decided to open a new digitally enabled cafe for students to order drinks, socialize, and study hard. But they need help setting up their menu experience.
@@ -30,6 +55,6 @@ The `./backend` directory contains a partially completed Flask server with a pre
 
 ### Frontend
 
-The `./frontend` directory contains a complete Ionic frontend to consume the data from the Flask server. You will only need to update the environment variables found within (./frontend/src/environment/environment.ts) to reflect the Auth0 configuration details set up for the backend app. 
+The `./frontend` directory contains a complete Ionic frontend to consume the data from the Flask server. You will only need to update the environment variables found within (./frontend/src/environment/environment.ts) to reflect the Auth0 configuration details set up for the backend app.
 
 [View the README.md within ./frontend for more details.](./frontend/README.md)
